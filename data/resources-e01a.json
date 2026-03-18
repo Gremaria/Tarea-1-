@@ -1,0 +1,48 @@
+[
+    {
+        "id": "RM1",
+        "categories": [
+            "masonry"
+        ],
+        "efficiency": 1
+    },
+    {
+        "id": "RC1",
+        "categories": [
+            "masonry",
+            "paint"
+        ],
+        "efficiency": 1
+    },
+    {
+        "id": "RP1",
+        "categories": [
+            "paint"
+        ],
+        "efficiency": 1
+    },
+    {
+        "id": "RE1",
+        "categories": [
+            "electric"
+        ],
+        "efficiency": 1
+    },
+    {
+        "id": "RS1",
+        "categories": [
+            "sanitary"
+        ],
+        "efficiency": 1
+    },
+    {
+        "id": "RC2",
+        "categories": [
+            "masonry",
+            "paint",
+            "electric",
+            "sanitary"
+        ],
+        "efficiency": 1
+    }
+]
