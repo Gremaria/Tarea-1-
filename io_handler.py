@@ -6,18 +6,11 @@ from rich.console import Console
  
 #datos de json 
 
-def cargar_recursos(ruta: str):
-    with open(ruta, "r") as f:
-        return json.load(f)
-
-def cargar_trabajo(ruta: str):
-    with open(ruta, "r") as f:
-        return json.load(f)
 
 
 print("-------------------------------------------------------------------------------------------------------------------------------------------")
 
-def tiempo_cronograma (trabajo:List, recursos: List)-> Dict:
+def tiempos_minimizados (trabajo:List, recursos: List)-> Dict:
      ejecucion=time.time() 
      cronograma= []  # donde se agrega los datos para el cronograma 
      recursos_libre={r["id"]: 0 for r in recursos} #[:10]
@@ -40,6 +33,9 @@ def tiempo_cronograma (trabajo:List, recursos: List)-> Dict:
      fin_ejecucion= time. time()
      ejecucion_total= (fin_ejecucion - ejecucion)
      return {"lista": cronograma, "tiempo_ms": ejecucion_total,"uso_recursos": cantidad_por_recurso}
+
+
+
 
 
 
